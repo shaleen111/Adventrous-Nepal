@@ -15,6 +15,7 @@ src: url("fonts/basic/Basic-Regular.ttf");
 
 body {
     background-color: whitesmoke;
+    margin-bottom: 4.3%;
 }
 
 #title > h2 {
@@ -62,17 +63,19 @@ a:hover{
     margin-right: 19%;
     text-align: left;
     width: 34%;
+    font-size: 18px;
 }
 
 .content h3 {
     padding-top:6px;
     font-size: 30px;
+    font-weight: 575;
     padding-bottom:6px;
 }
 
 .content p {
-    font-size: 25px;
     padding-top: 6px;    
+    padding-bottom: 6px;
 }
 
 .hline-bottom {
@@ -84,8 +87,19 @@ a:hover{
     margin-right: 19%;
 }
 
+.highlight {
+    color: darkgreen;
+}
+
 #active{
     background-color: #808080;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -111,4 +125,13 @@ a:hover{
     .content {
         width: 65%;
     }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 900px) {
+        #title > h2 {
+            font-size: 30px;
+        }
+        #nav a {
+            font-size: 20px;
+        }
 }
